@@ -16,13 +16,13 @@ console.log(avengers2.length);
 // Muestra en consola el último personaje del array
 const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
 rickAndMortyCharacters.push("Morty", "Summer");
-console.log(rickAndMortyCharacters[4]);
+console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1]);
 
 // 1.5 Elimina el último elemento del array y muestra el primero y el último por consola.
 const rickAndMortyCharacters1 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 rickAndMortyCharacters1.pop();
 console.log(rickAndMortyCharacters1[0]);
-console.log(rickAndMortyCharacters1[4]);
+console.log(rickAndMortyCharacters1[rickAndMortyCharacters1.length - 1]);
 
 // 1.6 Elimina el segundo elemento del array y muestra el array por consola.
 const rickAndMortyCharacters2 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
