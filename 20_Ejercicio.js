@@ -11,7 +11,7 @@ const toys = [
 
 const addPopularsToys = (list) => {
     for (const item of list) {
-        if (item.sellCount >= 15) {
+        if (item.sellCount > 15) {
             popularToys.push(item);
         }
     }

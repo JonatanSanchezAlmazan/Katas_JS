@@ -8,15 +8,13 @@ const products = [
 ];
 
 const halfSellCount = (list) => {
-    let count = 0;
-    let i = 0;
-    let half = 0;
+    let sum = 0;
+
     for (const product of list) {
-        count += product.sellCount;
-        i++;
-        half = count / i;
+        sum += product.sellCount;
+
     }
-    return half;
+    return sum / products.length;
 };
 
 const result = halfSellCount(products);

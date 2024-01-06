@@ -11,15 +11,19 @@ const users = [
 ];
 
 const usersAge = (list) => {
-    let results = ``;
+    let ofLegalAge = [];
+    let underage = [];
     for (const item of list) {
         if (item.years < 18) {
-            results += `Usuario menor de edad ${item.name} y su edad es ${item.years} años \n`;
+            underage.push(`Usuario menor de edad ${item.name} y su edad es ${item.years} años`);
         } else {
-            results += `Usuario mayor de edad ${item.name} y su edad es ${item.years} años \n`;
+            ofLegalAge.push(`Usuario mayor de edad ${item.name} y su edad es ${item.years} años`);
         }
     }
-    return results;
+    return {
+        ofLegalAge,
+        underage
+    }
 };
 
 const result = usersAge(users);

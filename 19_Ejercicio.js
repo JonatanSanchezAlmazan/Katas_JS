@@ -10,7 +10,8 @@ const toys = [
 const deleteCharacterCat = (list) => {
     for (let i = 0; i < list.length; i++) {
         if (list[i].name.includes("gato")) {
-            list.splice(i, 2);
+            list.splice(i, 1);
+            i--;
         }
     }
     return list;

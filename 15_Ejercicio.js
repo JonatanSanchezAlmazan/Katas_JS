@@ -4,8 +4,7 @@ const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 'Gorra de gansta
 
 
 products.forEach((product) => {
-    let result = product.includes("Camiseta");
-    if (result) {
+    if (product.includes("Camiseta")) {
         console.log(product);
     }
 });

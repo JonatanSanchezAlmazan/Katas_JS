@@ -10,22 +10,22 @@ const movies = [
 ];
 
 const durationMovies = (list) => {
-    const smallFilms = [];
-    const midleFilms = [];
-    const bigerFilms = [];
+    const shortMovies = [];
+    const mediumMovies = [];
+    const longMovies = [];
     for (const movie of list) {
         if (movie.durationInMinutes > 200) {
-            bigerFilms.push(movie);
+            longMovies.push(movie);
         } else if (movie.durationInMinutes > 100) {
-            midleFilms.push(movie);
+            mediumMovies.push(movie);
         } else {
-            smallFilms.push(movie);
+            shortMovies.push(movie);
         }
     }
     return {
-        smallFilms,
-        midleFilms,
-        bigerFilms
+        shortMovies,
+        mediumMovies,
+        longMovies
     }
 
 };
